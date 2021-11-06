@@ -1,8 +1,3 @@
-// new CountdownTimer({
-//     selector: '#timer-1',
-//     targetDate: new Date('Jul 17, 2019'),
-// });
-
 const refs = {
     daysEl: document.querySelector('span[data-value="days"]'),
     hoursEl: document.querySelector('span[data-value="hours"]'),
@@ -17,8 +12,6 @@ class CountdownTimer {
     }
 
     start() {
-        // const targetDate = new Date('Nov 08, 2021');
-
         this.intervalId = setInterval(() => {
             const currentTime = Date.now();
             const deltaTime = this.targetDate - currentTime;
